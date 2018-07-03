@@ -6,9 +6,13 @@ import os
 import shutil
 from datetime import datetime
 
-os.chdir("E:/faban")
+source_path = "F:/crewDev/out/artifacts"
+target_path = "F:/faban/"
 
-filename = datetime.now().strftime("%y%m%d")
+os.chdir(target_path)
 
-shutil.copytree("E:/cvicse/crew_dce/WebRoot/ewm", "E:/faban/"+filename)
-print("files are copied to path:["+filename+"] !")
+floder_name = datetime.now().strftime("%y%m%d%H%M")
+
+print("files are copying to path:["+floder_name+"],pleasewait...")
+shutil.copytree(source_path, target_path+floder_name)
+print("files were copied to path:["+floder_name+"] !")

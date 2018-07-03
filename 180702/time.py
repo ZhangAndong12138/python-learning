@@ -13,4 +13,4 @@ print(str(year)+str(month)+str(day)+"\n")
 
 today2 = datetime.now()
 
-print(today2.strftime("%y%m%d"))
+print(today2.strftime("%y%m%d%H%M"))
