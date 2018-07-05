@@ -15,4 +15,3 @@ turtle.fd(40)
 turtle.circle(16, 180)
 turtle.fd(40 * 2 / 3)
 turtle.done()
-    
