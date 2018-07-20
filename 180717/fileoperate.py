@@ -1,20 +1,12 @@
 
 import os
 import shutil
-from datetime import datetime
 
-source_path = "E:/source/"
-target_path = "E:/target/"
 
-os.chdir(target_path)
-
-floder_name = datetime.now().strftime("%y%m%d%H%M")
-
-print("files are copying to path:["+floder_name+"],pleasewait...")
-shutil.copytree(source_path, target_path+floder_name)
-print("files were copied to path:["+floder_name+"] !")
-
-os.chdir(target_path+floder_name)
+def copyfile(source, target):
+    print("正在把文件复制到路径:["+target+"],稍候...")
+    shutil.copytree(source, target)
+    print("文件复制完成!")
 
 
 def replace_xml(path):
